@@ -1,0 +1,30 @@
+<section class="product spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="trending__product">
+          <div class="row">
+            <div class="col-lg-8 section-title">
+              <div class="tab__sidebar">
+                <button class="tab__button tab__button-active" data-for-tab= "1">
+                  Now Showing
+                </button>
+                <button class="tab__button" data-for-tab= "2">
+                  Coming Soon
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="tab__content tab__content-active" data-tab="1">
+              <%= render partial: "showing", collection: @movies_showing %>
+            </div>
+            <div class="tab__content" data-tab="2">
+              <%= render partial: "coming", collection: @movies_coming %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
