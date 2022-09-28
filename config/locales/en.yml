@@ -26,6 +26,8 @@ en:
   show_create_failed: "Create failed"
   show_delete_denied: "Cannot delete because there were tickets sold for this show"
   overlap: "Times overlap another showtime on this screen"
+  daily_revenue: "Daily revenue"
+  report_date: "Report date"
   date:
     formats:
       own: "%d-%m-%Y"
@@ -57,6 +59,8 @@ en:
       log_out: "Log out"
       orders_history: "Orders History"
       searching: "Search here....."
+      sign_up: "Sign up"
+      log_in: "Log in"
     footer:
       copyright: "Copyright"
       reserved: "All rights reserved | This template is made with"
@@ -67,7 +71,7 @@ en:
       shows_list: "Shows list"
       movies: "movie"
       shows: "Shows"
-      start: "Start date:"
+      at: "Date:"
       end: "End date:"
       search: "Search"
     show:
