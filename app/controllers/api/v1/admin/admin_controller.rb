@@ -1,16 +1,11 @@
-module Api
-  module V1
-    module Admin
-      class AdminController < BaseController
-        before_action :require_admin
+class Api::V1::Admin::AdminController < BaseController
+  before_action :authenticate_user!, :require_admin
 
-        private
-        def require_admin
-          return if api_current_user&.admin?
+  private
+  def require_admin
+    return if api_current_user&.admin?
 
-          raise ExceptionHandler::Unauthorized
-        end
-      end
-    end
+    render json: {message: "User don't have right to access this page",
+                  success: false}, status: :unauthorized
   end
 end

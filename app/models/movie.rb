@@ -1,6 +1,4 @@
 class Movie < ApplicationRecord
-  attr_accessor :title
-
   enum status: {inactive: 0, active: 1}
   belongs_to :genre
   has_one_attached :image
